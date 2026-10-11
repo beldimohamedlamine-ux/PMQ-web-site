@@ -100,10 +100,10 @@
   border-inline-end: 1px solid var(--border-medium);
 }
 
-/* Thermometer Scale Placement in RTL - Identical to other languages */
+/* Thermometer Scale Placement in RTL - Placed on the left edge to avoid overlapping right-aligned Arabic text */
 [dir="rtl"] .thermometer-ruler {
-  right: 20px !important;
-  left: auto !important;
+  left: 20px !important;
+  right: auto !important;
   direction: ltr !important;
 }
 
