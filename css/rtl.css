@@ -102,8 +102,16 @@
 
 /* Thermometer Scale Placement in RTL */
 [dir="rtl"] .thermometer-ruler {
-  inset-inline-end: 18px;
+  inset-inline-end: 20px;
   inset-inline-start: auto;
+}
+
+[dir="rtl"] .ruler-scale,
+[dir="rtl"] .ruler-scale span,
+[dir="rtl"] .ruler-badge {
+  direction: ltr !important;
+  unicode-bidi: isolate;
+  font-family: var(--font-mono);
 }
 
 /* Floating WhatsApp Button in RTL */

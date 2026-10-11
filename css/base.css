@@ -244,22 +244,24 @@ bdi[dir="ltr"],
 /* Dynamic Thermometer Scroll Ruler (Desktop Margin) */
 .thermometer-ruler {
   position: fixed;
-  inset-inline-end: 18px;
+  inset-inline-end: 20px;
   top: 50%;
   transform: translateY(-50%);
-  width: 28px;
-  height: 260px;
+  width: 48px;
+  height: 275px;
   z-index: var(--z-ruler);
   display: none;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--border-medium);
-  border-radius: var(--radius-full);
-  padding: 10px 4px;
-  box-shadow: var(--shadow-sm);
+  border-radius: 26px;
+  padding: 14px 6px 12px;
+  box-shadow: 0 4px 18px rgba(11, 42, 48, 0.12);
+  user-select: none;
 }
 
 @media (min-width: 1200px) {
@@ -270,11 +272,13 @@ bdi[dir="ltr"],
 
 .ruler-track {
   position: relative;
-  width: 4px;
-  height: 180px;
-  background: var(--ink-100);
+  width: 5px;
+  height: 175px;
+  background: var(--teal-100);
   border-radius: 4px;
   overflow: hidden;
+  margin-inline-end: 20px;
+  border: 1px solid rgba(14, 124, 134, 0.15);
 }
 
 .ruler-fill {
@@ -291,29 +295,49 @@ bdi[dir="ltr"],
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 180px;
+  height: 175px;
   position: absolute;
-  inset-inline-start: 12px;
+  top: 14px;
+  inset-inline-start: 17px;
   font-family: var(--font-mono);
-  font-size: 8px;
-  color: var(--ink-500);
-  user-select: none;
+  font-size: 9.5px;
+  font-weight: 700;
+  color: var(--ink-800);
+  line-height: 1;
   pointer-events: none;
 }
 
+.ruler-scale span {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  white-space: nowrap;
+}
+
+.ruler-scale span::before {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 1.5px;
+  background-color: var(--ink-500);
+}
+
 .ruler-bulb {
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   background: var(--heat-90);
   border: 2px solid #fff;
-  box-shadow: 0 0 6px rgba(242, 140, 40, 0.5);
+  box-shadow: 0 0 8px rgba(242, 140, 40, 0.55);
+  margin-inline-end: 20px;
+  margin-top: -6px;
 }
 
 .ruler-badge {
   font-family: var(--font-mono);
-  font-size: 9px;
-  font-weight: 700;
+  font-size: 10px;
+  font-weight: 800;
   color: var(--teal-800);
-  margin-top: 2px;
+  margin-top: 4px;
+  text-align: center;
 }
