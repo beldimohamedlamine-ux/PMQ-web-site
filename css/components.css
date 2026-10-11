@@ -39,16 +39,18 @@
 
 .header-logo img,
 .header-logo svg {
-  height: 40px;
+  height: 44px;
   width: auto;
-  max-width: 150px;
+  max-width: 160px;
+  display: block;
+  object-fit: contain;
 }
 
 @media (min-width: 768px) {
   .header-logo img,
   .header-logo svg {
-    height: 48px;
-    max-width: 220px;
+    height: 52px;
+    max-width: 240px;
   }
 }
 
@@ -1264,6 +1266,14 @@
   .footer-grid {
     grid-template-columns: 1.5fr 1fr 1fr;
   }
+}
+
+.footer-brand img {
+  height: 56px;
+  width: auto;
+  max-width: 230px;
+  display: block;
+  object-fit: contain;
 }
 
 .footer-brand p {

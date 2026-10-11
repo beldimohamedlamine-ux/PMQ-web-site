@@ -59,9 +59,9 @@ Spécialisé dans la cartographie thermique et hygrométrique (ANPP / FD X 15-14
 
 ## ✏️ Guide de Personnalisation (Ce que vous devez remplacer)
 
-### 1. Logo de l'entreprise
-- Remplacer le fichier `assets/logo.svg` par votre fichier vectoriel définitif.
-- Le logo est référencé dans le header et le footer.
+### 1. Logo officiel de l'entreprise
+- Le logo officiel PMQ Services est intégré sous `assets/logo.png`, `assets/logo.svg` et `assets/logo-dark.png` (adapté pour fond sombre en pied de page).
+- Le favicon vectoriel officiel est configuré dans `assets/favicon.svg`.
 
 ### 2. Photos réelles (Domaines & Produits)
 - Les emplacements d'images se trouvent dans `assets/images/`.
