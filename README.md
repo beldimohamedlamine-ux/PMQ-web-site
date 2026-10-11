@@ -9,7 +9,7 @@ Spécialisé dans la cartographie thermique et hygrométrique (ANPP / FD X 15-14
 
 - **Stack 100% Légère (Zéro Build Step)** : HTML5 sémantique, CSS moderne (CSS Variables, Grid, clamp(), Logical Properties), Vanilla JavaScript (ES Modules).
 - **Internationalisation & Bi-Directionnel Natif** : 3 langues (Français par défaut, Anglais, Arabe avec RTL de premier ordre). Textes externalisés dans `/i18n/`.
-- **Réglementation & Métrologie Pharmaceutique** : Intégration conforme aux exigences ANPP, FD X 15-140 et OMS TRS 961 Annexe 9.
+- **Réglementation & Métrologie Professionnelle** : Intégration conforme aux exigences normatives et d'audit (FD X 15-140, OMS TRS 961, BPF, ANPP).
 - **Simulateur Interactif de Cartographie Thermique** : Modélisation SVG d'une chambre de stockage avec détection en temps réel des points chauds / froids et relevé sonde interactif.
 - **Console Télémétrique en Direct** : Écran LCD d'enregistreur avec micro-fluctuations calibrées en temps réel.
 - **Règle Thermomètre de Défilement** : Indicateur de progression vertical sur la marge simulant la montée du liquide thermométrique.

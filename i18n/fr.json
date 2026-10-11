@@ -14,7 +14,7 @@
     "cta": "Demander un devis"
   },
   "hero": {
-    "badge": "MÉTROLOGIE & QUALIFICATION PHARMACEUTIQUE",
+    "badge": "MÉTROLOGIE & QUALIFICATION PROFESSIONNELLE",
     "title_part1": "Votre partenaire pour la ",
     "title_highlight": "maîtrise",
     "title_part2": " de vos conditions de stockage",
@@ -35,11 +35,14 @@
     "simulator_desc": "Survolez ou touchez l'enceinte de stockage pour analyser la répartition thermique, localiser les gradients et vérifier les points critiques.",
     "hot_spot": "Point Chaud Détecté",
     "cold_spot": "Point Froid Détecté",
-    "legend_cold": "0°C (Froid)",
-    "legend_optimal": "5°C (Cible)",
-    "legend_hot": "10°C (Chaud)",
+    "legend_cold": "15°C (Froid)",
+    "legend_optimal": "20°C (Cible)",
+    "legend_hot": "25°C (Chaud)",
     "current_reading": "Lecture Sonde :",
-    "status_conform": "CONFORME AUX SPÉCIFICATIONS"
+    "status_conform": "CONFORME AUX SPÉCIFICATIONS",
+    "status_cold": "ZONE FROIDE / CRITIQUE BASSE (< 15°C)",
+    "status_hot": "ZONE CHAUDE / CRITIQUE HAUTE (> 25°C)",
+    "status_nominal": "ZONE NOMINALE (15°C - 25°C)"
   },
   "process": {
     "tag": "§02 / PROCESSUS MÉTHODOLOGIQUE",
@@ -60,7 +63,7 @@
     "title": "Domaines d'Intervention & Enceintes Qualifiées",
     "subtitle": "Interventions sur site industriel pour l'ensemble des volumes et zones de rétention thermique.",
     "item1_title": "Magasins de matières premières",
-    "item1_desc": "Surveillance rigoureuse des intrants pharmaceutiques et chimiques sensibles aux variations d'ambiance.",
+    "item1_desc": "Surveillance rigoureuse des intrants, matières premières et produits sensibles aux variations d'ambiance.",
     "item1_range": "+15°C à +25°C",
     "item2_title": "Magasins de produits finis",
     "item2_desc": "Garantie de la conformité réglementaire avant mise sur le marché et expédition.",
@@ -91,8 +94,8 @@
     "ref2_desc": "Supplément technique de l'OMS relatif à la cartographie de température des zones et magasins de stockage.",
     "ref3_title": "Qualification des Enceintes",
     "ref3_desc": "Recommandations internationales relatives à la qualification des zones de stockage à température contrôlée.",
-    "ref4_title": "BPF & BPD Pharmaceutiques",
-    "ref4_desc": "Exigences applicables aux conditions de stockage des produits pharmaceutiques et dispositifs médicaux (ANPP)."
+    "ref4_title": "BPF & Normes de Stockage Professionnelles",
+    "ref4_desc": "Exigences applicables aux conditions de stockage et de distribution des produits sensibles et réglementés."
   },
   "products": {
     "tag": "§05 / INSTRUMENTS DE MESURE",
@@ -105,15 +108,12 @@
     "feat4": "Grande capacité mémoire et export rapide (PDF / Excel)",
     "feat5": "Instruments adaptés aux magasins et chambres froides",
     "feat6": "Certificats d'étalonnage délivrés selon votre besoin",
-    "prod1_name": "Thermo-Hygromètre Numérique Double Affichage",
-    "prod1_desc": "Lecture instantanée de la température et de l'humidité relative avec mémoires Min/Max pour armoires et postes de travail.",
-    "prod1_spec": "Précision ±0.5°C | LCD Haute Visibilité",
-    "prod2_name": "Data Logger avec Sonde Déportée",
-    "prod2_desc": "Idéal pour chambres froides et réfrigérateurs, permettant une mesure interne sans ouverture intempestive de porte.",
-    "prod2_spec": "Sonde câble 2m | Alarmes programmables",
-    "prod3_name": "Enregistreur USB Autonome Multi-Usage",
-    "prod3_desc": "Génération automatique de rapports PDF chiffrés dès connexion USB. Idéal pour le transport et les entrepôts.",
-    "prod3_spec": "32 000 points de mesure | IP65 étanche",
+    "prod1_name": "Enregistreur de Température USB TempU03",
+    "prod1_desc": "Enregistreur autonome multi-usage avec écran LCD haute visibilité. Connexion directe USB pour génération instantanée de rapports PDF/CSV sans logiciel. Idéal pour entrepôts et transport.",
+    "prod1_spec": "USB Plug-and-Play | Rapports PDF/CSV Automatiques",
+    "prod2_name": "Mini Data Logger Thermo-Hygromètre Testo 174H",
+    "prod2_desc": "Mini enregistreur 2 canaux pour la surveillance continue de la température et de l'humidité relative. Capteur capacitif haute précision, grand écran numérique et conformité d'audit.",
+    "prod2_spec": "Double Mesure T° / %HR | Mémoire 16 000 Points",
     "cta_prod": "Demander un devis"
   },
   "commitment": {
@@ -121,7 +121,7 @@
     "title": "L'Excellence Métrologique au Service de Votre Conformité",
     "subtitle": "Un engagement sans compromis sur la rigueur scientifique et la réactivité d'intervention.",
     "com1_title": "Expertise technique",
-    "com1_desc": "Une maîtrise éprouvée des protocoles métrologiques et des exigences de l'industrie pharmaceutique.",
+    "com1_desc": "Une maîtrise éprouvée des protocoles métrologiques et des exigences industrielles et professionnelles.",
     "com2_title": "Matériel fiable et performant",
     "com2_desc": "Un parc de capteurs récents de haute précision, vérifiés et entretenus rigoureusement.",
     "com3_title": "Traçabilité des mesures",

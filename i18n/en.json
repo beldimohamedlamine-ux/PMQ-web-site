@@ -14,7 +14,7 @@
     "cta": "Request a Quote"
   },
   "hero": {
-    "badge": "PHARMACEUTICAL METROLOGY & QUALIFICATION",
+    "badge": "PROFESSIONAL METROLOGY & QUALIFICATION",
     "title_part1": "Your partner for ",
     "title_highlight": "mastering",
     "title_part2": " your storage conditions",
@@ -35,11 +35,14 @@
     "simulator_desc": "Hover or touch the storage chamber to analyze thermal distribution, detect gradients, and verify critical hotspots.",
     "hot_spot": "Detected Hot Spot",
     "cold_spot": "Detected Cold Spot",
-    "legend_cold": "0°C (Cold)",
-    "legend_optimal": "5°C (Target)",
-    "legend_hot": "10°C (Hot)",
+    "legend_cold": "15°C (Cold)",
+    "legend_optimal": "20°C (Target)",
+    "legend_hot": "25°C (Hot)",
     "current_reading": "Probe Readout:",
-    "status_conform": "COMPLIANT WITH SPECIFICATIONS"
+    "status_conform": "COMPLIANT WITH SPECIFICATIONS",
+    "status_cold": "COLD ZONE / LOW CRITICAL (< 15°C)",
+    "status_hot": "HOT ZONE / HIGH CRITICAL (> 25°C)",
+    "status_nominal": "NOMINAL ZONE (15°C - 25°C)"
   },
   "process": {
     "tag": "§02 / METHODOLOGY",
@@ -60,7 +63,7 @@
     "title": "Intervention Areas & Qualified Storage Chambers",
     "subtitle": "On-site industrial mapping across all thermal volumes and controlled enclosures.",
     "item1_title": "Raw Materials Warehouses",
-    "item1_desc": "Strict monitoring of pharmaceutical and chemical inputs sensitive to environmental fluctuations.",
+    "item1_desc": "Strict monitoring of raw materials, chemical inputs, and products sensitive to environmental variations.",
     "item1_range": "+15°C to +25°C",
     "item2_title": "Finished Goods Warehouses",
     "item2_desc": "Ensuring regulatory compliance prior to market distribution and batch release.",
@@ -91,8 +94,8 @@
     "ref2_desc": "World Health Organization technical supplement on temperature mapping of storage areas.",
     "ref3_title": "Storage Qualification",
     "ref3_desc": "International recommendations on the qualification of temperature-controlled storage facilities.",
-    "ref4_title": "Pharmaceutical GxP",
-    "ref4_desc": "Requirements applicable to storage conditions for pharmaceuticals and medical devices (ANPP)."
+    "ref4_title": "Good Storage Practices & Quality Standards",
+    "ref4_desc": "Requirements applicable to storage conditions for sensitive, healthcare, and industrial products."
   },
   "products": {
     "tag": "§05 / MEASUREMENT INSTRUMENTS",
@@ -105,15 +108,12 @@
     "feat4": "High-capacity memory and rapid data export (PDF / Excel)",
     "feat5": "Instruments suited for warehouses and cold rooms",
     "feat6": "Calibration certificates issued upon request",
-    "prod1_name": "Dual-Display Digital Thermo-Hygrometer",
-    "prod1_desc": "Instantaneous display of temperature and relative humidity with Min/Max memory for offices and warehouses.",
-    "prod1_spec": "Accuracy ±0.5°C | High-Contrast LCD",
-    "prod2_name": "Data Logger with External Probe",
-    "prod2_desc": "Ideal for cold rooms and refrigerators, enabling internal monitoring without door-opening disturbances.",
-    "prod2_spec": "2m Cable Probe | Programmable Alarms",
-    "prod3_name": "Autonomous Multi-Use USB Data Logger",
-    "prod3_desc": "Automatic encrypted PDF report generation upon direct USB connection. Ideal for transport and storage.",
-    "prod3_spec": "32,000 Data Points | IP65 Waterproof",
+    "prod1_name": "TempU03 USB Temperature Data Logger",
+    "prod1_desc": "Autonomous multi-use logger with high-visibility LCD screen. Direct USB plug-and-play connection for instant PDF/CSV reports without software. Ideal for warehouses and transport.",
+    "prod1_spec": "USB Plug-and-Play | Auto PDF/CSV Reports",
+    "prod2_name": "Testo 174H Mini Thermo-Hygrometer Data Logger",
+    "prod2_desc": "Compact 2-channel data logger for continuous temperature and relative humidity monitoring. High-precision capacitive sensor, large display, and audit compliance.",
+    "prod2_spec": "Dual T° / %RH Sensing | 16,000 Data Points",
     "cta_prod": "Request a Quote"
   },
   "commitment": {
@@ -121,7 +121,7 @@
     "title": "Metrological Excellence Ensuring Your Compliance",
     "subtitle": "Uncompromising commitment to scientific rigor and rapid response times.",
     "com1_title": "Technical expertise",
-    "com1_desc": "Proven mastery of metrological protocols and pharmaceutical regulatory standards.",
+    "com1_desc": "Proven mastery of metrological protocols and professional industrial requirements.",
     "com2_title": "Reliable & high-performance equipment",
     "com2_desc": "Fleet of recently calibrated, high-accuracy sensors maintained to the highest standards.",
     "com3_title": "Traceability of measurements",

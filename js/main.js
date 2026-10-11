@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const humValEl = document.getElementById('heroHumVal');
 
   if (tempValEl && humValEl) {
-    let currentTemp = 5.2;
+    let currentTemp = 19.8;
     let currentHum = 42.8;
 
     setInterval(() => {
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       const tempDelta = (Math.random() - 0.5) * 0.2; // +/- 0.1°C
       const humDelta = (Math.random() - 0.5) * 0.4;  // +/- 0.2%
 
-      currentTemp = Math.max(5.1, Math.min(5.4, currentTemp + tempDelta));
+      currentTemp = Math.max(19.5, Math.min(20.2, currentTemp + tempDelta));
       currentHum = Math.max(42.4, Math.min(43.2, currentHum + humDelta));
 
       tempValEl.textContent = currentTemp.toFixed(1);

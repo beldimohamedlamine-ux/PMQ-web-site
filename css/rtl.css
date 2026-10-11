@@ -146,3 +146,7 @@
 [dir="rtl"] .nav-link::after {
   transform-origin: center;
 }
+
+[dir="rtl"] #simProbeStatus {
+  text-align: left;
+}
