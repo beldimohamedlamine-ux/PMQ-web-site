@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 110" width="420" height="110" fill="none">
+  <defs>
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E7C86"/>
+      <stop offset="100%" stop-color="#14A3A8"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F28C28"/>
+      <stop offset="100%" stop-color="#FFA84A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Dynamic Swoosh Curve (Echoing the flyer brand mark) -->
+  <path d="M 12 70 C 45 88, 120 92, 175 62 C 205 45, 210 25, 195 20 C 178 15, 150 32, 138 52" 
+        stroke="url(#orangeGrad)" stroke-width="7" stroke-linecap="round" fill="none"/>
+
+  <!-- "PMQ" Bold Monogram -->
+  <!-- Letter P -->
+  <path d="M 22 24 L 54 24 C 68 24, 76 31, 76 43 C 76 55, 68 62, 54 62 L 36 62 L 36 78 L 22 78 Z M 36 36 L 36 50 L 52 50 C 59 50, 62 47, 62 43 C 62 39, 59 36, 52 36 Z" 
+        fill="url(#tealGrad)"/>
+
+  <!-- Letter M -->
+  <path d="M 86 24 L 102 24 L 118 56 L 134 24 L 150 24 L 150 78 L 136 78 L 136 44 L 123 70 L 113 70 L 100 44 L 100 78 L 86 78 Z" 
+        fill="url(#tealGrad)"/>
+
+  <!-- Letter Q -->
+  <path d="M 190 22 C 170 22, 156 35, 156 52 C 156 68, 170 80, 188 80 C 196 80, 203 77, 210 72 L 216 80 L 225 73 L 218 64 C 223 58, 226 53, 226 52 C 226 35, 210 22, 190 22 Z M 190 34 C 202 34, 212 42, 212 52 C 212 60, 204 68, 190 68 C 178 68, 170 60, 170 52 C 170 42, 178 34, 190 34 Z" 
+        fill="url(#tealGrad)"/>
+
+  <!-- Secondary Orange Swoosh Accent inside Q -->
+  <path d="M 198 62 L 224 82" stroke="url(#orangeGrad)" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- "services" Typography -->
+  <text x="28" y="93" font-family="'DM Sans', 'Bricolage Grotesque', sans-serif" font-size="21" font-weight="700" fill="#0E7C86" letter-spacing="4">services</text>
+
+  <!-- Dividing Line & Tagline -->
+  <line x1="22" y1="102" x2="35" y2="102" stroke="#F28C28" stroke-width="2"/>
+  <line x1="40" y1="102" x2="390" y2="102" stroke="#0E7C86" stroke-width="1.5" stroke-opacity="0.3"/>
+  <text x="44" y="106" font-family="'JetBrains Mono', sans-serif" font-size="8.5" font-weight="600" fill="#0B2A30" letter-spacing="1.2">Professional Metrology &amp; Qualification</text>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" width="300" height="240" fill="none">
+  <rect width="300" height="240" fill="#F0F8F9"/>
+  <!-- Probe Cable & Stainless Tip -->
+  <path d="M 125 35 C 80 20, 50 60, 50 120 C 50 160, 70 180, 80 180" stroke="#F28C28" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <!-- Stainless steel sensor tip -->
+  <rect x="70" y="176" width="36" height="8" rx="4" fill="#889FA3"/>
+  <rect x="100" y="177" width="10" height="6" rx="2" fill="#4B666B"/>
+  <!-- Main Logger Unit -->
+  <rect x="120" y="40" width="110" height="165" rx="16" fill="#FFFFFF" stroke="#0E7C86" stroke-width="3"/>
+  <!-- Orange accent bumper -->
+  <rect x="116" y="80" width="4" height="60" rx="2" fill="#F28C28"/>
+  <rect x="230" y="80" width="4" height="60" rx="2" fill="#F28C28"/>
+  <!-- Screen -->
+  <rect x="135" y="60" width="80" height="75" rx="6" fill="#A8D0C9" stroke="#0B2A30" stroke-width="2"/>
+  <text x="142" y="76" font-family="'JetBrains Mono', monospace" font-size="8" fill="#0B2A30" font-weight="700">EXT PROBE</text>
+  <text x="195" y="104" font-family="'JetBrains Mono', monospace" font-size="30" fill="#0B2A30" font-weight="800" text-anchor="end">4.8</text>
+  <text x="206" y="94" font-family="'JetBrains Mono', monospace" font-size="12" fill="#0B2A30" font-weight="700">°C</text>
+  <circle cx="145" cy="120" r="4" fill="#4CC66B"/>
+  <text x="154" y="123" font-family="'JetBrains Mono', monospace" font-size="8" fill="#0B2A30" font-weight="700">RECORDING</text>
+  <!-- Control Keys -->
+  <rect x="140" y="148" width="32" height="18" rx="4" fill="#0E7C86"/>
+  <text x="156" y="160" font-family="'JetBrains Mono', monospace" font-size="8" fill="#FFFFFF" text-anchor="middle" font-weight="700">PLAY</text>
+  <rect x="178" y="148" width="32" height="18" rx="4" fill="#0B2A30"/>
+  <text x="194" y="160" font-family="'JetBrains Mono', monospace" font-size="8" fill="#FFFFFF" text-anchor="middle" font-weight="700">STOP</text>
+</svg>

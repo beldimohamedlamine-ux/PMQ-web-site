@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120" width="320" height="120" fill="none">
+  <defs>
+    <linearGradient id="bgSmp" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E2D33"/>
+      <stop offset="100%" stop-color="#144C57"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="120" fill="url(#bgSmp)"/>
+  <!-- Sample Retention Archive Racks & Test Vials -->
+  <rect x="30" y="20" width="120" height="85" rx="4" fill="#0A2429" stroke="#1D6574" stroke-width="2"/>
+  <!-- Rows of sample tubes -->
+  <circle cx="50" cy="40" r="8" fill="#F28C28"/>
+  <circle cx="75" cy="40" r="8" fill="#4CC66B"/>
+  <circle cx="100" cy="40" r="8" fill="#25C2D6"/>
+  <circle cx="125" cy="40" r="8" fill="#4CC66B"/>
+
+  <circle cx="50" cy="70" r="8" fill="#25C2D6"/>
+  <circle cx="75" cy="70" r="8" fill="#F28C28"/>
+  <circle cx="100" cy="70" r="8" fill="#4CC66B"/>
+  <circle cx="125" cy="70" r="8" fill="#25C2D6"/>
+
+  <!-- Right side: Data logger tag with barcode -->
+  <rect x="180" y="25" width="110" height="75" rx="6" fill="#FFFFFF" stroke="#0E7C86" stroke-width="2"/>
+  <text x="235" y="45" font-family="'JetBrains Mono', monospace" font-size="9" fill="#0B2A30" text-anchor="middle" font-weight="700">RETENTION LOT</text>
+  <line x1="195" y1="55" x2="275" y2="55" stroke="#CBDCDD" stroke-width="2"/>
+  <text x="235" y="70" font-family="'JetBrains Mono', monospace" font-size="11" fill="#0E7C86" text-anchor="middle" font-weight="800">5-YEAR RET.</text>
+  <text x="235" y="85" font-family="'JetBrains Mono', monospace" font-size="8" fill="#F28C28" text-anchor="middle" font-weight="700">TRACEABLE ISO</text>
+</svg>

@@ -1,0 +1,123 @@
+/* ==========================================================================
+   PMQ SERVICES - RTL (ARABIC) CSS
+   First-Class Arabic Typography & Layout Symmetry
+   ========================================================================== */
+
+[dir="rtl"] {
+  font-family: var(--font-ar), -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.8;
+  letter-spacing: normal !important;
+}
+
+/* Ensure no letter-spacing breaks Arabic cursive script */
+[dir="rtl"] *:not(.ltr-run):not(bdi):not(.font-mono):not(.phone-number) {
+  letter-spacing: normal !important;
+}
+
+/* Headings in Arabic */
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6,
+[dir="rtl"] .hero-title,
+[dir="rtl"] .section-title,
+[dir="rtl"] .hero-badge,
+[dir="rtl"] .section-tag {
+  font-family: var(--font-ar), -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: normal !important;
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+[dir="rtl"] p,
+[dir="rtl"] .section-subtitle,
+[dir="rtl"] .hero-subtitle,
+[dir="rtl"] .domain-desc,
+[dir="rtl"] .product-desc,
+[dir="rtl"] .commitment-desc,
+[dir="rtl"] .step-desc,
+[dir="rtl"] .standard-desc {
+  line-height: 1.8;
+  letter-spacing: normal !important;
+}
+
+/* Protected LTR Numbers, Units, Phone Numbers & Standards */
+[dir="rtl"] .ltr-run,
+[dir="rtl"] bdi[dir="ltr"],
+[dir="rtl"] .phone-number,
+[dir="rtl"] .standard-code,
+[dir="rtl"] .readout-val,
+[dir="rtl"] .readout-unit,
+[dir="rtl"] .simulator-probe-value,
+[dir="rtl"] .domain-range-badge,
+[dir="rtl"] .product-badge {
+  direction: ltr !important;
+  unicode-bidi: isolate;
+  display: inline-block;
+  font-family: var(--font-mono);
+}
+
+/* Data-Sheet Card Corner Accents in RTL */
+[dir="rtl"] .data-card::before {
+  inset-inline-start: -1px;
+  inset-inline-end: auto;
+}
+
+[dir="rtl"] .data-card::after {
+  inset-inline-end: -1px;
+  inset-inline-start: auto;
+}
+
+/* Timeline & Stepper Numbering in RTL */
+[dir="rtl"] .step-num {
+  font-family: var(--font-mono);
+  direction: ltr;
+}
+
+/* Arrow & Directional Icons */
+[dir="rtl"] .icon-chevron-right,
+[dir="rtl"] .icon-arrow-right {
+  transform: scaleX(-1);
+}
+
+/* Standard Cards Left Border */
+[dir="rtl"] .standard-card {
+  border-inline-start: 4px solid var(--orange-500);
+  border-inline-end: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Mission Statement Card Accent */
+[dir="rtl"] .mission-statement-card {
+  border-inline-start: 6px solid var(--teal-700);
+  border-inline-end: 1px solid var(--border-teal);
+}
+
+/* Hero Standards Box Accent */
+[dir="rtl"] .hero-standards-card {
+  border-inline-start: 4px solid var(--teal-700);
+  border-inline-end: 1px solid var(--border-medium);
+}
+
+/* Thermometer Scale Placement in RTL */
+[dir="rtl"] .thermometer-ruler {
+  inset-inline-end: 18px;
+  inset-inline-start: auto;
+}
+
+/* Floating WhatsApp Button in RTL */
+[dir="rtl"] .floating-whatsapp {
+  inset-inline-end: 24px;
+  inset-inline-start: auto;
+}
+
+/* Language Switcher in RTL */
+[dir="rtl"] .lang-switcher {
+  direction: ltr; /* Keep language codes readable LTR */
+}
+
+/* Nav Link Hover Underline */
+[dir="rtl"] .nav-link::after {
+  transform-origin: center;
+}

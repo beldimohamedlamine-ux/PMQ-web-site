@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120" width="320" height="120" fill="none">
+  <defs>
+    <linearGradient id="bgCold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#082A38"/>
+      <stop offset="100%" stop-color="#12475C"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="120" fill="url(#bgCold)"/>
+  <!-- Insulated Wall Panels -->
+  <line x1="60" y1="0" x2="60" y2="120" stroke="#1D607B" stroke-width="1.5"/>
+  <line x1="120" y1="0" x2="120" y2="120" stroke="#1D607B" stroke-width="1.5"/>
+  <line x1="180" y1="0" x2="180" y2="120" stroke="#1D607B" stroke-width="1.5"/>
+  <line x1="240" y1="0" x2="240" y2="120" stroke="#1D607B" stroke-width="1.5"/>
+  <!-- Ceiling Evaporator / Blower Unit -->
+  <rect x="70" y="15" width="180" height="30" rx="4" fill="#C5DEE8" stroke="#104D68" stroke-width="2"/>
+  <circle cx="115" cy="30" r="9" fill="#1B6C8F"/>
+  <circle cx="160" cy="30" r="9" fill="#1B6C8F"/>
+  <circle cx="205" cy="30" r="9" fill="#1B6C8F"/>
+  <!-- Airflow waves -->
+  <path d="M 115 48 C 115 65, 105 80, 95 90" stroke="#25C2D6" stroke-width="2" stroke-dasharray="3,3"/>
+  <path d="M 160 48 C 160 65, 160 80, 160 90" stroke="#25C2D6" stroke-width="2" stroke-dasharray="3,3"/>
+  <path d="M 205 48 C 205 65, 215 80, 225 90" stroke="#25C2D6" stroke-width="2" stroke-dasharray="3,3"/>
+  <!-- Digital Temperature Badge -->
+  <rect x="235" y="75" width="70" height="30" rx="4" fill="#051922" stroke="#25C2D6" stroke-width="1.5"/>
+  <text x="270" y="94" font-family="'JetBrains Mono', monospace" font-size="12" fill="#25C2D6" text-anchor="middle" font-weight="800">+4.2°C</text>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120" width="320" height="120" fill="none">
+  <defs>
+    <linearGradient id="bgFrz" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07202B"/>
+      <stop offset="100%" stop-color="#0E3D52"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="120" fill="url(#bgFrz)"/>
+  <!-- Laboratory Refrigerator & Ultra-low Freezer (-80°C) -->
+  <rect x="50" y="15" width="85" height="92" rx="6" fill="#FFFFFF" stroke="#0E7C86" stroke-width="2"/>
+  <!-- Glass Door View -->
+  <rect x="58" y="22" width="69" height="78" rx="4" fill="#CDE7ED" stroke="#4B8C9C" stroke-width="1.5"/>
+  <line x1="58" y1="48" x2="127" y2="48" stroke="#4B8C9C" stroke-width="1.5"/>
+  <line x1="58" y1="74" x2="127" y2="74" stroke="#4B8C9C" stroke-width="1.5"/>
+  <!-- Freezer Unit (-80°C Heavy Insulated Door) -->
+  <rect x="180" y="15" width="90" height="92" rx="6" fill="#E2EDF0" stroke="#0B2A30" stroke-width="2.5"/>
+  <!-- Heavy latch handle -->
+  <rect x="172" y="55" width="8" height="24" rx="2" fill="#F28C28"/>
+  <!-- LCD Panel on door -->
+  <rect x="198" y="26" width="54" height="20" rx="3" fill="#041217"/>
+  <text x="225" y="40" font-family="'JetBrains Mono', monospace" font-size="10" fill="#25C2D6" text-anchor="middle" font-weight="700">-80.2°C</text>
+  <!-- Snowflake icon -->
+  <circle cx="225" cy="75" r="14" fill="#C5E3EC"/>
+  <path d="M 225 67 L 225 83 M 217 75 L 233 75" stroke="#0E7C86" stroke-width="2" stroke-linecap="round"/>
+</svg>

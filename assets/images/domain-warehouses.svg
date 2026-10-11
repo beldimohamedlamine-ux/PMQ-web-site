@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120" width="320" height="120" fill="none">
+  <defs>
+    <linearGradient id="bgWh" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#082226"/>
+      <stop offset="100%" stop-color="#0F383F"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="120" fill="url(#bgWh)"/>
+  <!-- High bay racking system perspective -->
+  <line x1="30" y1="15" x2="30" y2="105" stroke="#F28C28" stroke-width="4"/>
+  <line x1="85" y1="15" x2="85" y2="105" stroke="#F28C28" stroke-width="4"/>
+  <line x1="30" y1="40" x2="85" y2="40" stroke="#0E7C86" stroke-width="3"/>
+  <line x1="30" y1="70" x2="85" y2="70" stroke="#0E7C86" stroke-width="3"/>
+  <line x1="30" y1="100" x2="85" y2="100" stroke="#0E7C86" stroke-width="3"/>
+
+  <!-- Center Aisle -->
+  <polygon points="120,105 150,45 170,45 200,105" fill="#143A40" opacity="0.6"/>
+
+  <!-- Right Racking -->
+  <line x1="235" y1="15" x2="235" y2="105" stroke="#F28C28" stroke-width="4"/>
+  <line x1="290" y1="15" x2="290" y2="105" stroke="#F28C28" stroke-width="4"/>
+  <line x1="235" y1="40" x2="290" y2="40" stroke="#0E7C86" stroke-width="3"/>
+  <line x1="235" y1="70" x2="290" y2="70" stroke="#0E7C86" stroke-width="3"/>
+  <line x1="235" y1="100" x2="290" y2="100" stroke="#0E7C86" stroke-width="3"/>
+
+  <!-- Multi-point sensors placed in racking -->
+  <circle cx="30" cy="40" r="4" fill="#4CC66B"/>
+  <circle cx="85" cy="70" r="4" fill="#4CC66B"/>
+  <circle cx="235" cy="40" r="4" fill="#4CC66B"/>
+  <circle cx="290" cy="100" r="4" fill="#E5432F"/>
+</svg>

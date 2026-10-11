@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120" width="320" height="120" fill="none">
+  <defs>
+    <linearGradient id="bgCtrl" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09252A"/>
+      <stop offset="100%" stop-color="#12434B"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="120" fill="url(#bgCtrl)"/>
+  <!-- Cleanroom Airflow & Controlled Thermal Airlock -->
+  <rect x="30" y="15" width="260" height="90" rx="6" fill="#0E2F35" stroke="#1D6C7A" stroke-width="2"/>
+  <!-- Ceiling HEPA / HVAC diffusers -->
+  <rect x="50" y="15" width="40" height="10" fill="#25C2D6"/>
+  <rect x="110" y="15" width="40" height="10" fill="#25C2D6"/>
+  <rect x="170" y="15" width="40" height="10" fill="#25C2D6"/>
+  <rect x="230" y="15" width="40" height="10" fill="#25C2D6"/>
+  <!-- Laminar air currents downward -->
+  <line x1="70" y1="28" x2="70" y2="85" stroke="#37DFEE" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <line x1="130" y1="28" x2="130" y2="85" stroke="#37DFEE" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <line x1="190" y1="28" x2="190" y2="85" stroke="#37DFEE" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <line x1="250" y1="28" x2="250" y2="85" stroke="#37DFEE" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <!-- Central qualification sensor cluster -->
+  <circle cx="160" cy="55" r="8" fill="#F28C28"/>
+  <text x="160" y="78" font-family="'JetBrains Mono', monospace" font-size="9" fill="#F28C28" text-anchor="middle" font-weight="700">MAPPING GRID</text>
+</svg>

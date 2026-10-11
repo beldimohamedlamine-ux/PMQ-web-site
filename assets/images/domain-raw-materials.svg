@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120" width="320" height="120" fill="none">
+  <defs>
+    <linearGradient id="bgRaw" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E3238"/>
+      <stop offset="100%" stop-color="#144A53"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="120" fill="url(#bgRaw)"/>
+  <!-- Pallet & Pharmaceutical Raw Material Drums -->
+  <rect x="20" y="85" width="280" height="8" rx="2" fill="#D38A38"/>
+  <rect x="35" y="45" width="45" height="40" rx="4" fill="#0E7C86" stroke="#22A4AF" stroke-width="2"/>
+  <line x1="35" y1="58" x2="80" y2="58" stroke="#105B63" stroke-width="2"/>
+  <rect x="90" y="45" width="45" height="40" rx="4" fill="#0E7C86" stroke="#22A4AF" stroke-width="2"/>
+  <line x1="90" y1="58" x2="135" y2="58" stroke="#105B63" stroke-width="2"/>
+  <!-- Intermediate Bulk Containers (IBC) -->
+  <rect x="155" y="30" width="55" height="55" rx="4" fill="#1B4F57" stroke="#488B96" stroke-width="2"/>
+  <rect x="165" y="40" width="35" height="35" rx="3" fill="#0A252A"/>
+  <text x="182" y="62" font-family="'JetBrains Mono', monospace" font-size="10" fill="#4CC66B" text-anchor="middle" font-weight="700">API</text>
+  <rect x="225" y="30" width="55" height="55" rx="4" fill="#1B4F57" stroke="#488B96" stroke-width="2"/>
+  <rect x="235" y="40" width="35" height="35" rx="3" fill="#0A252A"/>
+  <text x="252" y="62" font-family="'JetBrains Mono', monospace" font-size="10" fill="#4CC66B" text-anchor="middle" font-weight="700">QC</text>
+  <!-- Temperature probe marker -->
+  <circle cx="112" cy="38" r="4" fill="#F28C28"/>
+  <text x="290" y="24" font-family="'JetBrains Mono', monospace" font-size="10" fill="#F28C28" text-anchor="end" font-weight="700">+15°C / +25°C</text>
+</svg>
