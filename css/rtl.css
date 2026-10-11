@@ -100,18 +100,35 @@
   border-inline-end: 1px solid var(--border-medium);
 }
 
-/* Thermometer Scale Placement in RTL */
+/* Thermometer Scale Placement in RTL - Identical to other languages */
 [dir="rtl"] .thermometer-ruler {
-  inset-inline-end: 20px;
-  inset-inline-start: auto;
+  right: 20px !important;
+  left: auto !important;
+  direction: ltr !important;
 }
 
-[dir="rtl"] .ruler-scale,
-[dir="rtl"] .ruler-scale span,
+[dir="rtl"] .ruler-track {
+  margin-right: 20px !important;
+  margin-left: 0 !important;
+}
+
+[dir="rtl"] .ruler-scale {
+  left: 17px !important;
+  right: auto !important;
+  direction: ltr !important;
+}
+
+[dir="rtl"] .ruler-scale span {
+  direction: ltr !important;
+}
+
+[dir="rtl"] .ruler-bulb {
+  margin-right: 20px !important;
+  margin-left: 0 !important;
+}
+
 [dir="rtl"] .ruler-badge {
   direction: ltr !important;
-  unicode-bidi: isolate;
-  font-family: var(--font-mono);
 }
 
 /* Floating WhatsApp Button in RTL */

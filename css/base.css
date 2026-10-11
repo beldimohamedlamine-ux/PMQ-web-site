@@ -244,7 +244,7 @@ bdi[dir="ltr"],
 /* Dynamic Thermometer Scroll Ruler (Desktop Margin) */
 .thermometer-ruler {
   position: fixed;
-  inset-inline-end: 20px;
+  right: 20px;
   top: 50%;
   transform: translateY(-50%);
   width: 48px;
@@ -262,6 +262,7 @@ bdi[dir="ltr"],
   padding: 14px 6px 12px;
   box-shadow: 0 4px 18px rgba(11, 42, 48, 0.12);
   user-select: none;
+  direction: ltr !important;
 }
 
 @media (min-width: 1200px) {
@@ -277,7 +278,8 @@ bdi[dir="ltr"],
   background: var(--teal-100);
   border-radius: 4px;
   overflow: hidden;
-  margin-inline-end: 20px;
+  margin-right: 20px;
+  margin-left: 0;
   border: 1px solid rgba(14, 124, 134, 0.15);
 }
 
@@ -298,13 +300,15 @@ bdi[dir="ltr"],
   height: 175px;
   position: absolute;
   top: 14px;
-  inset-inline-start: 17px;
+  left: 17px;
+  right: auto;
   font-family: var(--font-mono);
   font-size: 9.5px;
   font-weight: 700;
   color: var(--ink-800);
   line-height: 1;
   pointer-events: none;
+  direction: ltr !important;
 }
 
 .ruler-scale span {
@@ -312,6 +316,7 @@ bdi[dir="ltr"],
   align-items: center;
   gap: 3px;
   white-space: nowrap;
+  direction: ltr !important;
 }
 
 .ruler-scale span::before {
@@ -329,7 +334,8 @@ bdi[dir="ltr"],
   background: var(--heat-90);
   border: 2px solid #fff;
   box-shadow: 0 0 8px rgba(242, 140, 40, 0.55);
-  margin-inline-end: 20px;
+  margin-right: 20px;
+  margin-left: 0;
   margin-top: -6px;
 }
 
@@ -340,4 +346,5 @@ bdi[dir="ltr"],
   color: var(--teal-800);
   margin-top: 4px;
   text-align: center;
+  direction: ltr !important;
 }
