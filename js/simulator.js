@@ -160,20 +160,35 @@ export function initHeatMapSimulator() {
   container.addEventListener('pointerleave', resetToNominal);
   container.addEventListener('pointercancel', resetToNominal);
 
-  // Touch Support
+  // Touch Support (Optimized for Mobile/Phone)
+  let touchResetTimer = null;
+
   container.addEventListener('touchstart', (e) => {
+    if (touchResetTimer) {
+      clearTimeout(touchResetTimer);
+      touchResetTimer = null;
+    }
     if (e.touches && e.touches[0]) {
       queueUpdate(e.touches[0].clientX, e.touches[0].clientY);
     }
   }, { passive: true });
 
   container.addEventListener('touchmove', (e) => {
+    if (touchResetTimer) {
+      clearTimeout(touchResetTimer);
+      touchResetTimer = null;
+    }
     if (e.touches && e.touches[0]) {
       queueUpdate(e.touches[0].clientX, e.touches[0].clientY);
     }
   }, { passive: true });
 
-  container.addEventListener('touchend', resetToNominal, { passive: true });
+  container.addEventListener('touchend', () => {
+    if (touchResetTimer) clearTimeout(touchResetTimer);
+    touchResetTimer = setTimeout(() => {
+      resetToNominal();
+    }, 2200);
+  }, { passive: true });
 
   // Update text dynamically on language change
   window.addEventListener('pmq-lang-changed', () => {

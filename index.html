@@ -118,6 +118,11 @@
         <line x1="16" y1="13" x2="8" y2="13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
         <line x1="16" y1="17" x2="8" y2="17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
       </g>
+      <g id="icon-chart">
+        <line x1="18" y1="20" x2="18" y2="10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <line x1="12" y1="20" x2="12" y2="4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <line x1="6" y1="20" x2="6" y2="14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </g>
     </defs>
   </svg>
 
@@ -178,18 +183,59 @@
     </div>
   </header>
 
+  <!-- Mobile Backdrop Overlay -->
+  <div id="mobileBackdrop" class="mobile-backdrop" aria-hidden="true"></div>
+
   <!-- Mobile Drawer -->
   <div id="mobileDrawer" class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Menu Mobile">
     <nav class="mobile-nav">
-      <a href="#hero" class="nav-link" data-i18n="nav.home">Accueil</a>
-      <a href="#prestation" class="nav-link" data-i18n="nav.services">Prestation</a>
-      <a href="#domaines" class="nav-link" data-i18n="nav.domains">Domaines</a>
-      <a href="#references" class="nav-link" data-i18n="nav.standards">Références</a>
-      <a href="#produits" class="nav-link" data-i18n="nav.products">Produits</a>
-      <a href="#engagement" class="nav-link" data-i18n="nav.commitment">Engagement</a>
-      <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+      <a href="#hero" class="nav-link active">
+        <span data-i18n="nav.home">Accueil</span>
+        <svg class="mobile-nav-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none"><use href="#icon-chevron-right"/></svg>
+      </a>
+      <a href="#prestation" class="nav-link">
+        <span data-i18n="nav.services">Prestation</span>
+        <svg class="mobile-nav-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none"><use href="#icon-chevron-right"/></svg>
+      </a>
+      <a href="#domaines" class="nav-link">
+        <span data-i18n="nav.domains">Domaines</span>
+        <svg class="mobile-nav-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none"><use href="#icon-chevron-right"/></svg>
+      </a>
+      <a href="#references" class="nav-link">
+        <span data-i18n="nav.standards">Références</span>
+        <svg class="mobile-nav-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none"><use href="#icon-chevron-right"/></svg>
+      </a>
+      <a href="#produits" class="nav-link">
+        <span data-i18n="nav.products">Produits</span>
+        <svg class="mobile-nav-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none"><use href="#icon-chevron-right"/></svg>
+      </a>
+      <a href="#engagement" class="nav-link">
+        <span data-i18n="nav.commitment">Engagement</span>
+        <svg class="mobile-nav-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none"><use href="#icon-chevron-right"/></svg>
+      </a>
+      <a href="#contact" class="nav-link">
+        <span data-i18n="nav.contact">Contact</span>
+        <svg class="mobile-nav-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none"><use href="#icon-chevron-right"/></svg>
+      </a>
     </nav>
-    <a href="https://wa.me/213564866940" class="btn btn-primary btn-lg" data-wa-type="general" target="_blank" rel="noopener noreferrer">
+
+    <!-- Quick Mobile Contact Info Strip -->
+    <div class="mobile-drawer-contact">
+      <a href="tel:+213564866940" class="mobile-drawer-contact-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><use href="#icon-phone"/></svg>
+        <span class="font-mono phone-number"><bdi dir="ltr">0564 86 69 40</bdi></span>
+      </a>
+      <a href="mailto:pmqservices1@gmail.com" class="mobile-drawer-contact-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><use href="#icon-mail"/></svg>
+        <span>pmqservices1@gmail.com</span>
+      </a>
+      <div class="mobile-drawer-contact-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><use href="#icon-map-pin"/></svg>
+        <span>Constantine – Algérie</span>
+      </div>
+    </div>
+
+    <a href="https://wa.me/213564866940" class="btn btn-primary btn-lg" style="width: 100%;" data-wa-type="general" target="_blank" rel="noopener noreferrer">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="#icon-whatsapp"/></svg>
       <span data-i18n="nav.cta">Demander un devis</span>
     </a>
@@ -344,11 +390,11 @@
               <p data-i18n="services.simulator_desc">Survolez ou touchez l'enceinte de stockage pour analyser la répartition thermique, localiser les gradients et vérifier les points critiques.</p>
             </div>
             <div class="simulator-stats">
-              <div>
+              <div class="simulator-probe-readout">
                 <div class="simulator-probe-label" data-i18n="services.current_reading">Lecture Sonde :</div>
                 <div id="simProbeValue" class="simulator-probe-value ltr-run">20.5 °C</div>
               </div>
-              <div id="simProbeStatus" class="font-mono" style="font-size: 11px; color: #4CC66B;" data-i18n="services.status_conform">
+              <div id="simProbeStatus" class="font-mono" data-i18n="services.status_conform">
                 CONFORME AUX SPÉCIFICATIONS
               </div>
             </div>
@@ -460,12 +506,14 @@
 
           <!-- Heat-Map Gradient Legend -->
           <div class="simulator-legend">
-            <span class="thermal-legend-label" data-i18n="services.legend_cold">15°C (Froid)</span>
             <div class="thermal-bar-container">
               <div class="thermal-bar" aria-hidden="true"></div>
             </div>
-            <span class="thermal-legend-label" data-i18n="services.legend_optimal">20°C (Cible)</span>
-            <span class="thermal-legend-label" data-i18n="services.legend_hot">25°C (Chaud)</span>
+            <div class="simulator-legend-labels">
+              <span class="thermal-legend-label" data-i18n="services.legend_cold">15°C (Froid)</span>
+              <span class="thermal-legend-label" data-i18n="services.legend_optimal">20°C (Cible)</span>
+              <span class="thermal-legend-label" data-i18n="services.legend_hot">25°C (Chaud)</span>
+            </div>
           </div>
         </div>
       </div>
@@ -1016,7 +1064,7 @@
               </div>
               <div class="contact-card-labels">
                 <span class="contact-label-title" data-i18n="contact.email_label">Messagerie Électronique</span>
-                <a href="mailto:pmqservices1@gmail.com" class="contact-main-value" style="font-size: 1.25rem;">
+                <a href="mailto:pmqservices1@gmail.com" class="contact-main-value">
                   <bdi dir="ltr">pmqservices1@gmail.com</bdi>
                 </a>
               </div>

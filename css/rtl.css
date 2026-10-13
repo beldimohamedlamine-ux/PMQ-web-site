@@ -137,6 +137,14 @@
   inset-inline-start: auto;
 }
 
+@media (max-width: 767px) {
+  [dir="rtl"] .floating-whatsapp {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+}
+
 /* Language Switcher in RTL */
 [dir="rtl"] .lang-switcher {
   direction: ltr; /* Keep language codes readable LTR */
@@ -148,5 +156,45 @@
 }
 
 [dir="rtl"] #simProbeStatus {
-  text-align: left;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  [dir="rtl"] #simProbeStatus {
+    text-align: left;
+  }
+}
+
+/* Mobile Drawer, Sticky Bar & Card Layouts in RTL */
+[dir="rtl"] .mobile-nav .nav-link {
+  text-align: right;
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .mobile-nav-arrow {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .mobile-nav .nav-link:hover .mobile-nav-arrow,
+[dir="rtl"] .mobile-nav .nav-link.active .mobile-nav-arrow {
+  transform: scaleX(-1) translateX(4px);
+}
+
+[dir="rtl"] .mobile-drawer-contact-item {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+[dir="rtl"] .sticky-mobile-bar {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 639px) {
+  [dir="rtl"] .process-step-card {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+  [dir="rtl"] .step-desc {
+    text-align: right;
+  }
 }

@@ -30,23 +30,43 @@ document.addEventListener('DOMContentLoaded', async () => {
   window.addEventListener('scroll', handleHeaderScroll, { passive: true });
   handleHeaderScroll();
 
-  // 5. Mobile Navigation Drawer
+  // 5. Mobile Navigation Drawer & Backdrop
   const mobileToggle = document.querySelector('.mobile-toggle');
   const mobileDrawer = document.querySelector('.mobile-drawer');
+  const mobileBackdrop = document.querySelector('.mobile-backdrop');
 
-  function toggleDrawer() {
-    if (!mobileToggle || !mobileDrawer) return;
-    const isOpen = mobileDrawer.classList.contains('open');
-    if (isOpen) {
-      mobileDrawer.classList.remove('open');
-      mobileToggle.classList.remove('active');
-      mobileToggle.setAttribute('aria-expanded', 'false');
-      document.body.style.overflow = '';
-    } else {
-      mobileDrawer.classList.add('open');
+  function openDrawer() {
+    if (!mobileDrawer) return;
+    mobileDrawer.classList.add('open');
+    if (mobileToggle) {
       mobileToggle.classList.add('active');
       mobileToggle.setAttribute('aria-expanded', 'true');
-      document.body.style.overflow = 'hidden';
+    }
+    if (mobileBackdrop) {
+      mobileBackdrop.classList.add('open');
+    }
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeDrawer() {
+    if (!mobileDrawer) return;
+    mobileDrawer.classList.remove('open');
+    if (mobileToggle) {
+      mobileToggle.classList.remove('active');
+      mobileToggle.setAttribute('aria-expanded', 'false');
+    }
+    if (mobileBackdrop) {
+      mobileBackdrop.classList.remove('open');
+    }
+    document.body.style.overflow = '';
+  }
+
+  function toggleDrawer() {
+    if (!mobileDrawer) return;
+    if (mobileDrawer.classList.contains('open')) {
+      closeDrawer();
+    } else {
+      openDrawer();
     }
   }
 
@@ -54,19 +74,21 @@ document.addEventListener('DOMContentLoaded', async () => {
     mobileToggle.addEventListener('click', toggleDrawer);
   }
 
-  // Close drawer on link click
-  document.querySelectorAll('.mobile-drawer .nav-link').forEach((link) => {
+  if (mobileBackdrop) {
+    mobileBackdrop.addEventListener('click', closeDrawer);
+  }
+
+  // Close drawer on any link or button click inside the drawer
+  document.querySelectorAll('.mobile-drawer a').forEach((link) => {
     link.addEventListener('click', () => {
-      if (mobileDrawer && mobileDrawer.classList.contains('open')) {
-        toggleDrawer();
-      }
+      closeDrawer();
     });
   });
 
   // Close drawer on Escape key
   window.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && mobileDrawer && mobileDrawer.classList.contains('open')) {
-      toggleDrawer();
+      closeDrawer();
     }
   });
 
