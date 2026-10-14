@@ -11,7 +11,8 @@
     "products": "Products",
     "commitment": "Commitment",
     "contact": "Contact",
-    "cta": "Request a Quote"
+    "cta": "Request a Quote",
+    "select_language": "Language:"
   },
   "hero": {
     "badge": "PROFESSIONAL METROLOGY & QUALIFICATION",
@@ -42,7 +43,11 @@
     "status_conform": "COMPLIANT WITH SPECIFICATIONS",
     "status_cold": "COLD ZONE / LOW CRITICAL (< 15°C)",
     "status_hot": "HOT ZONE / HIGH CRITICAL (> 25°C)",
-    "status_nominal": "NOMINAL ZONE (15°C - 25°C)"
+    "status_nominal": "NOMINAL ZONE (15°C - 25°C)",
+    "sim_hvac": "HVAC COOLING UNIT #01",
+    "sim_door": "LOADING DOCK DOOR",
+    "sim_cold_spot": "COLD SPOT : 15.8 °C",
+    "sim_hot_spot": "HOT SPOT : 24.8 °C"
   },
   "process": {
     "tag": "§02 / METHODOLOGY",

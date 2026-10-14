@@ -32,6 +32,8 @@ export function initHeatMapSimulator() {
   const probeStatusEl = document.getElementById('simProbeStatus');
   const probeCursor = document.getElementById('simProbeCursor');
   const probeText = document.getElementById('simProbeText');
+  const simProbePin = document.getElementById('simProbePin');
+  const simProbeBox = document.getElementById('simProbeBox');
   const crosshairH = document.getElementById('simCrosshairH');
   const crosshairV = document.getElementById('simCrosshairV');
 
@@ -84,21 +86,33 @@ export function initHeatMapSimulator() {
     const temp = calculateTemperature(normX, normY);
     const formatted = temp.toFixed(1);
 
+    // Calculate harmonious color corresponding to temperature range
+    let tempColor = '#4CC66B';
+    const texts = getTexts();
+
+    if (temp < 15.0) {
+      tempColor = '#25C2D6'; // Cold blue/cyan
+      if (probeStatusEl) probeStatusEl.textContent = texts.cold;
+    } else if (temp > 25.0) {
+      tempColor = '#E5432F'; // Hot red
+      if (probeStatusEl) probeStatusEl.textContent = texts.hot;
+    } else {
+      if (probeStatusEl) probeStatusEl.textContent = texts.nominal;
+      if (temp < 17.5) {
+        tempColor = '#38BDC2'; // Cool teal
+      } else if (temp > 22.5) {
+        tempColor = '#F28C28'; // Warm orange
+      } else {
+        tempColor = '#4CC66B'; // Nominal optimal green
+      }
+    }
+
     // Update Topbar Readout
     probeValueEl.textContent = `${formatted} °C`;
+    probeValueEl.style.color = tempColor;
 
     if (probeStatusEl) {
-      const texts = getTexts();
-      if (temp < 15.0) {
-        probeStatusEl.textContent = texts.cold;
-        probeStatusEl.style.color = '#25C2D6';
-      } else if (temp > 25.0) {
-        probeStatusEl.textContent = texts.hot;
-        probeStatusEl.style.color = '#F28C28';
-      } else {
-        probeStatusEl.textContent = texts.nominal;
-        probeStatusEl.style.color = '#4CC66B';
-      }
+      probeStatusEl.style.color = tempColor;
     }
 
     // Update SVG Crosshairs & Probe Tag
@@ -108,6 +122,21 @@ export function initHeatMapSimulator() {
 
       probeCursor.setAttribute('transform', `translate(${svgX}, ${svgY})`);
       if (probeText) probeText.textContent = `${formatted} °C`;
+
+      // Flip probe box leftward when approaching the right wall to prevent SVG boundary overflow
+      if (normX > 0.82) {
+        if (simProbeBox) simProbeBox.setAttribute('x', '-104');
+        if (probeText) probeText.setAttribute('x', '-59');
+      } else {
+        if (simProbeBox) simProbeBox.setAttribute('x', '14');
+        if (probeText) probeText.setAttribute('x', '59');
+      }
+
+      // Synchronize live temperature color
+      if (simProbePin) simProbePin.setAttribute('fill', tempColor);
+      if (simProbeBox) simProbeBox.setAttribute('stroke', tempColor);
+      crosshairH.setAttribute('stroke', tempColor);
+      crosshairV.setAttribute('stroke', tempColor);
 
       crosshairH.setAttribute('y1', svgY);
       crosshairH.setAttribute('y2', svgY);
@@ -133,16 +162,31 @@ export function initHeatMapSimulator() {
     }
 
     const texts = getTexts();
+    const nominalColor = '#4CC66B';
+
     probeValueEl.textContent = '20.5 °C';
+    probeValueEl.style.color = nominalColor;
+
     if (probeStatusEl) {
       probeStatusEl.textContent = texts.conform;
-      probeStatusEl.style.color = '#4CC66B';
+      probeStatusEl.style.color = nominalColor;
     }
+
     if (probeCursor && crosshairH && crosshairV) {
       probeCursor.setAttribute('transform', 'translate(420, 190)');
-      if (probeText) probeText.textContent = '20.5 °C';
+      if (simProbePin) simProbePin.setAttribute('fill', nominalColor);
+      if (simProbeBox) {
+        simProbeBox.setAttribute('stroke', nominalColor);
+        simProbeBox.setAttribute('x', '14');
+      }
+      if (probeText) {
+        probeText.textContent = '20.5 °C';
+        probeText.setAttribute('x', '59');
+      }
+      crosshairH.setAttribute('stroke', nominalColor);
       crosshairH.setAttribute('y1', '190');
       crosshairH.setAttribute('y2', '190');
+      crosshairV.setAttribute('stroke', nominalColor);
       crosshairV.setAttribute('x1', '420');
       crosshairV.setAttribute('x2', '420');
     }

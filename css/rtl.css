@@ -147,7 +147,28 @@
 
 /* Language Switcher in RTL */
 [dir="rtl"] .lang-switcher {
-  direction: ltr; /* Keep language codes readable LTR */
+  direction: ltr !important; /* Keep language codes readable LTR */
+  flex-direction: row !important;
+  display: inline-flex !important;
+}
+
+/* Heat-Map Simulator & Scientific Temperature Legend - Physical Coordinates & Axis */
+[dir="rtl"] .simulator-wrapper,
+[dir="rtl"] .simulator-canvas-container,
+[dir="rtl"] .simulator-canvas-container svg,
+[dir="rtl"] .simulator-canvas-container svg text,
+[dir="rtl"] .simulator-legend,
+[dir="rtl"] .thermal-bar-container,
+[dir="rtl"] .thermal-bar,
+[dir="rtl"] .simulator-legend-labels,
+[dir="rtl"] .thermal-legend-label {
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
+}
+
+[dir="rtl"] .simulator-legend-labels {
+  flex-direction: row !important;
+  justify-content: space-between !important;
 }
 
 /* Nav Link Hover Underline */
@@ -165,10 +186,9 @@
   }
 }
 
-/* Mobile Drawer, Sticky Bar & Card Layouts in RTL */
+/* Mobile Drawer, Navigation & Card Layouts in Natural RTL */
 [dir="rtl"] .mobile-nav .nav-link {
   text-align: right;
-  flex-direction: row-reverse;
 }
 
 [dir="rtl"] .mobile-nav-arrow {
@@ -177,21 +197,16 @@
 
 [dir="rtl"] .mobile-nav .nav-link:hover .mobile-nav-arrow,
 [dir="rtl"] .mobile-nav .nav-link.active .mobile-nav-arrow {
-  transform: scaleX(-1) translateX(4px);
+  transform: scaleX(-1) translateX(-4px);
 }
 
 [dir="rtl"] .mobile-drawer-contact-item {
-  flex-direction: row-reverse;
   text-align: right;
-}
-
-[dir="rtl"] .sticky-mobile-bar {
-  flex-direction: row-reverse;
+  justify-content: flex-start;
 }
 
 @media (max-width: 639px) {
   [dir="rtl"] .process-step-card {
-    flex-direction: row-reverse;
     text-align: right;
   }
   [dir="rtl"] .step-desc {

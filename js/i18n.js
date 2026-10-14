@@ -94,15 +94,19 @@ export async function setLanguage(lang) {
   if (!SUPPORTED_LANGS.includes(lang)) lang = DEFAULT_LANG;
 
   currentLang = lang;
-  localStorage.setItem(STORAGE_KEY, lang);
+  try {
+    localStorage.setItem(STORAGE_KEY, lang);
+  } catch (e) {
+    /* ignore storage quota/security error */
+  }
 
-  // Update <html> lang and dir attributes
+  // Update <html> & <body> lang and dir attributes
   const html = document.documentElement;
+  const isRtl = lang === 'ar';
   html.setAttribute('lang', lang);
-  if (lang === 'ar') {
-    html.setAttribute('dir', 'rtl');
-  } else {
-    html.setAttribute('dir', 'ltr');
+  html.setAttribute('dir', isRtl ? 'rtl' : 'ltr');
+  if (document.body) {
+    document.body.setAttribute('dir', isRtl ? 'rtl' : 'ltr');
   }
 
   // Load translations if not cached
@@ -112,23 +116,30 @@ export async function setLanguage(lang) {
 
   applyTranslations(translations[lang]);
 
-  // Dispatch event for other modules
+  // Dispatch event for other modules (simulator, animations, etc.)
   window.dispatchEvent(new CustomEvent('pmq-lang-changed', { detail: { lang } }));
 }
 
 /**
  * Initialize i18n
+ * Prioritizes: 1. URL ?lang= parameter, 2. Explicitly saved user choice in localStorage, 3. Default to 'fr' (French)
  */
 export async function initI18n() {
   const urlParams = new URLSearchParams(window.location.search);
   const queryLang = urlParams.get('lang');
-  const savedLang = localStorage.getItem(STORAGE_KEY);
-  const browserLang = navigator.language?.slice(0, 2);
+  let savedLang = null;
+  try {
+    savedLang = localStorage.getItem(STORAGE_KEY);
+  } catch (e) {
+    /* ignore */
+  }
+
+  // Always default to French ('fr') for PMQ Services
   const initialLang = (queryLang && SUPPORTED_LANGS.includes(queryLang)) 
     ? queryLang 
-    : (savedLang || (SUPPORTED_LANGS.includes(browserLang) ? browserLang : DEFAULT_LANG));
+    : (savedLang && SUPPORTED_LANGS.includes(savedLang) ? savedLang : DEFAULT_LANG);
 
-  // Setup click listeners for language buttons
+  // Setup click listeners for language buttons across header and mobile drawer
   document.querySelectorAll('.lang-btn').forEach((btn) => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();

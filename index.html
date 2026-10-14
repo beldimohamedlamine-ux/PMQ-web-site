@@ -233,6 +233,14 @@
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><use href="#icon-map-pin"/></svg>
         <span>Constantine – Algérie</span>
       </div>
+    <!-- Mobile Drawer Language Selector -->
+    <div class="mobile-drawer-lang">
+      <span class="lang-label" data-i18n="nav.select_language">Langue :</span>
+      <div class="lang-switcher" role="group" aria-label="Choix de la langue">
+        <button type="button" class="lang-btn active" data-lang="fr" aria-pressed="true">FR</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" class="lang-btn" data-lang="ar" aria-pressed="false">AR</button>
+      </div>
     </div>
 
     <a href="https://wa.me/213564866940" class="btn btn-primary btn-lg" style="width: 100%;" data-wa-type="general" target="_blank" rel="noopener noreferrer">
@@ -464,12 +472,12 @@
               </g>
 
               <!-- Cooling Evaporator Unit (Top-Left Ceiling) -->
-              <rect x="80" y="10" width="160" height="30" rx="4" fill="#C5DEE8" stroke="#1D607B" stroke-width="2"/>
-              <text x="160" y="29" font-family="'JetBrains Mono', monospace" font-size="10" fill="#0B2A30" text-anchor="middle" font-weight="700">GROUPE CLIMATISATION #01</text>
+              <rect x="60" y="10" width="200" height="30" rx="4" fill="#C5DEE8" stroke="#1D607B" stroke-width="2"/>
+              <text id="simHvacText" x="160" y="29" font-family="'JetBrains Mono', 'Tajawal', monospace, sans-serif" font-size="10" fill="#0B2A30" text-anchor="middle" font-weight="700" data-i18n="services.sim_hvac">GROUPE CLIMATISATION #01</text>
 
               <!-- Loading Dock Door (Bottom-Right Wall) -->
-              <rect x="690" y="340" width="130" height="30" rx="4" fill="#F28C28" stroke="#FFFFFF" stroke-width="1.5"/>
-              <text x="755" y="359" font-family="'JetBrains Mono', monospace" font-size="10" fill="#FFFFFF" text-anchor="middle" font-weight="700">PORTE QUAI / CHARGEMENT</text>
+              <rect x="650" y="340" width="180" height="30" rx="4" fill="#F28C28" stroke="#FFFFFF" stroke-width="1.5"/>
+              <text id="simDoorText" x="740" y="359" font-family="'JetBrains Mono', 'Tajawal', monospace, sans-serif" font-size="10" fill="#FFFFFF" text-anchor="middle" font-weight="700" data-i18n="services.sim_door">PORTE QUAI / CHARGEMENT</text>
 
               <!-- Cold Spot Marker -->
               <g transform="translate(160, 70)">
@@ -477,8 +485,8 @@
                   <animate attributeName="r" values="10;18;10" dur="3s" repeatCount="indefinite"/>
                 </circle>
                 <circle cx="0" cy="0" r="6" fill="#2B5CE6"/>
-                <rect x="12" y="-14" width="150" height="26" rx="4" fill="#0B2A30" stroke="#25C2D6" stroke-width="1"/>
-                <text x="22" y="3" font-family="'JetBrains Mono', monospace" font-size="10" fill="#25C2D6" font-weight="700">POINT FROID : 15.8 °C</text>
+                <rect x="12" y="-15" width="165" height="30" rx="4" fill="#0B2A30" stroke="#25C2D6" stroke-width="1"/>
+                <text id="simColdSpotText" x="94.5" y="4" font-family="'JetBrains Mono', 'Tajawal', monospace, sans-serif" font-size="10" fill="#25C2D6" text-anchor="middle" font-weight="700" data-i18n="services.sim_cold_spot">POINT FROID : 15.8 °C</text>
               </g>
 
               <!-- Hot Spot Marker -->
@@ -487,19 +495,19 @@
                   <animate attributeName="r" values="10;18;10" dur="2.4s" repeatCount="indefinite"/>
                 </circle>
                 <circle cx="0" cy="0" r="6" fill="#E5432F"/>
-                <rect x="-165" y="-14" width="155" height="26" rx="4" fill="#0B2A30" stroke="#E5432F" stroke-width="1"/>
-                <text x="-155" y="3" font-family="'JetBrains Mono', monospace" font-size="10" fill="#F28C28" font-weight="700">POINT CHAUD : 24.8 °C</text>
+                <rect x="-177" y="-15" width="165" height="30" rx="4" fill="#0B2A30" stroke="#E5432F" stroke-width="1"/>
+                <text id="simHotSpotText" x="-94.5" y="4" font-family="'JetBrains Mono', 'Tajawal', monospace, sans-serif" font-size="10" fill="#F28C28" text-anchor="middle" font-weight="700" data-i18n="services.sim_hot_spot">POINT CHAUD : 24.8 °C</text>
               </g>
 
               <!-- Interactive Dynamic Crosshairs -->
-              <line id="simCrosshairH" x1="0" y1="190" x2="840" y2="190" stroke="#F28C28" stroke-width="1" stroke-dasharray="3,3" opacity="0.6"/>
-              <line id="simCrosshairV" x1="420" y1="0" x2="420" y2="380" stroke="#F28C28" stroke-width="1" stroke-dasharray="3,3" opacity="0.6"/>
+              <line id="simCrosshairH" x1="0" y1="190" x2="840" y2="190" stroke="#4CC66B" stroke-width="1" stroke-dasharray="3,3" opacity="0.6"/>
+              <line id="simCrosshairV" x1="420" y1="0" x2="420" y2="380" stroke="#4CC66B" stroke-width="1" stroke-dasharray="3,3" opacity="0.6"/>
 
               <!-- Interactive Floating Probe Cursor -->
               <g id="simProbeCursor" transform="translate(420, 190)">
-                <circle cx="0" cy="0" r="8" fill="#F28C28" stroke="#FFFFFF" stroke-width="2"/>
-                <rect x="14" y="-16" width="85" height="28" rx="4" fill="#071E22" stroke="#F28C28" stroke-width="1.5"/>
-                <text id="simProbeText" x="22" y="3" font-family="'JetBrains Mono', monospace" font-size="13" fill="#FFFFFF" font-weight="800">20.5 °C</text>
+                <circle id="simProbePin" cx="0" cy="0" r="8" fill="#4CC66B" stroke="#FFFFFF" stroke-width="2"/>
+                <rect id="simProbeBox" x="14" y="-16" width="90" height="32" rx="4" fill="#071E22" stroke="#4CC66B" stroke-width="1.5"/>
+                <text id="simProbeText" x="59" y="4" font-family="'JetBrains Mono', monospace" font-size="13" fill="#FFFFFF" font-weight="800" text-anchor="middle">20.5 °C</text>
               </g>
             </svg>
           </div>

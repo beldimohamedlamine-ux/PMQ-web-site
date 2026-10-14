@@ -11,7 +11,8 @@
     "products": "Produits",
     "commitment": "Engagement",
     "contact": "Contact",
-    "cta": "Demander un devis"
+    "cta": "Demander un devis",
+    "select_language": "Langue :"
   },
   "hero": {
     "badge": "MÉTROLOGIE & QUALIFICATION PROFESSIONNELLE",
@@ -42,7 +43,11 @@
     "status_conform": "CONFORME AUX SPÉCIFICATIONS",
     "status_cold": "ZONE FROIDE / CRITIQUE BASSE (< 15°C)",
     "status_hot": "ZONE CHAUDE / CRITIQUE HAUTE (> 25°C)",
-    "status_nominal": "ZONE NOMINALE (15°C - 25°C)"
+    "status_nominal": "ZONE NOMINALE (15°C - 25°C)",
+    "sim_hvac": "GROUPE CLIMATISATION #01",
+    "sim_door": "PORTE QUAI / CHARGEMENT",
+    "sim_cold_spot": "POINT FROID : 15.8 °C",
+    "sim_hot_spot": "POINT CHAUD : 24.8 °C"
   },
   "process": {
     "tag": "§02 / PROCESSUS MÉTHODOLOGIQUE",
