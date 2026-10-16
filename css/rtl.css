@@ -56,7 +56,7 @@
   direction: ltr !important;
   unicode-bidi: isolate;
   display: inline-block;
-  font-family: var(--font-mono);
+  font-family: var(--font-heading);
 }
 
 /* Data-Sheet Card Corner Accents in RTL */
@@ -72,7 +72,7 @@
 
 /* Timeline & Stepper Numbering in RTL */
 [dir="rtl"] .step-num {
-  font-family: var(--font-mono);
+  font-family: var(--font-heading);
   direction: ltr;
 }
 

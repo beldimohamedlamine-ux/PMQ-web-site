@@ -24,12 +24,12 @@
     "standards_ref": "FD X 15-140 et WHO Technical Report Series, No. 961, 2011 (Annexe 9).",
     "cta_quote": "Demander un devis",
     "cta_explore": "Explorer nos prestations",
-    "telemetry_label": "CAPTEUR ÉTALONNÉ EN CONTINU",
-    "status_nominal": "CONDITIONS NOMINALES",
-    "hotspot_alert": "ALERTE POINT CHAUD ÉVITÉE"
+    "telemetry_label": "DOSSIER TECHNIQUE DE QUALIFICATION",
+    "status_nominal": "CONFORME ANPP & OMS",
+    "hotspot_alert": "TRAÇABILITÉ MÉTROLOGIQUE GARANTIE"
   },
   "services": {
-    "tag": "§01 / PRESTATION",
+    "tag": "Expertise & Prestation",
     "title": "Notre Prestation de Cartographie",
     "statement": "PMQ SERVICES réalise des prestations de cartographie de température et d'humidité afin d'évaluer l'homogénéité des conditions environnementales, d'identifier les zones critiques et de vérifier l'adéquation des conditions de stockage aux exigences réglementaires et normatives.",
     "simulator_title": "Simulateur Interactif de Cartographie Thermique",
@@ -50,7 +50,7 @@
     "sim_hot_spot": "POINT CHAUD : 24.8 °C"
   },
   "process": {
-    "tag": "§02 / PROCESSUS MÉTHODOLOGIQUE",
+    "tag": "Protocole Méthodologique",
     "title": "Détail de la Prestation en 9 Étapes",
     "subtitle": "Une démarche métrologique rigoureuse, standardisée et conforme aux exigences d'audit.",
     "step1": "Étude de la configuration et du volume de la zone à cartographier",
@@ -64,7 +64,7 @@
     "step9": "Élaboration d'un rapport de cartographie professionnel"
   },
   "domains": {
-    "tag": "§03 / DOMAINES D'APPLICATION",
+    "tag": "Domaines d'Intervention",
     "title": "Domaines d'Intervention & Enceintes Qualifiées",
     "subtitle": "Interventions sur site industriel pour l'ensemble des volumes et zones de rétention thermique.",
     "item1_title": "Magasins de matières premières",
@@ -90,7 +90,7 @@
     "item7_range": "Spécifications sur mesure"
   },
   "standards": {
-    "tag": "§04 / CONFORMITÉ & RÉFÉRENTIELS",
+    "tag": "Conformité & Référentiels",
     "title": "Références Normatives & Exigences Réglementaires",
     "intro": "Les prestations sont réalisées selon les exigences applicables de l'ANPP et en référence aux normes et guides en vigueur :",
     "ref1_title": "FD X 15-140",
@@ -103,7 +103,7 @@
     "ref4_desc": "Exigences applicables aux conditions de stockage et de distribution des produits sensibles et réglementés."
   },
   "products": {
-    "tag": "§05 / INSTRUMENTS DE MESURE",
+    "tag": "Équipements & Métrologie",
     "title": "Vente de Thermo-Hygromètres & Enregistreurs",
     "lead": "Nous proposons également la fourniture de thermo-hygromètres et d'enregistreurs adaptés au suivi des conditions de stockage.",
     "features_title": "Caractéristiques de notre gamme :",
@@ -122,7 +122,7 @@
     "cta_prod": "Demander un devis"
   },
   "commitment": {
-    "tag": "§06 / NOTRE ENGAGEMENT",
+    "tag": "Engagement & Déontologie",
     "title": "L'Excellence Métrologique au Service de Votre Conformité",
     "subtitle": "Un engagement sans compromis sur la rigueur scientifique et la réactivité d'intervention.",
     "com1_title": "Expertise technique",
@@ -143,7 +143,7 @@
     "btn_call": "Appeler le 0564 86 69 40"
   },
   "contact": {
-    "tag": "§07 / COORDONNÉES & CONTACT",
+    "tag": "Coordonnées & Devis",
     "title": "Contactez PMQ Services",
     "subtitle": "Notre équipe basée à Constantine intervient sur l'ensemble du territoire national algérien.",
     "location_label": "Localisation",

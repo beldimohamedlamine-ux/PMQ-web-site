@@ -427,8 +427,8 @@
 }
 
 .mobile-drawer-lang .lang-label {
-  font-family: var(--font-mono);
-  font-size: 12px;
+  font-family: var(--font-body);
+  font-size: 13px;
   font-weight: 700;
   color: var(--ink-800);
 }
@@ -466,14 +466,14 @@
   display: inline-flex;
   align-items: center;
   gap: var(--space-2);
-  background-color: var(--teal-100);
-  border: 1px solid var(--teal-400);
-  padding: 5px 12px;
-  border-radius: var(--radius-full);
-  font-family: var(--font-mono);
-  font-size: var(--text-mono);
+  background-color: var(--teal-50);
+  border: 1px solid var(--teal-300);
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
   font-weight: 700;
-  color: var(--teal-800);
+  color: var(--teal-900);
   letter-spacing: 0.05em;
   margin-block-end: var(--space-3);
 }
@@ -520,10 +520,11 @@
 }
 
 .hero-standards-ref {
-  font-family: var(--font-mono);
-  font-size: var(--text-mono);
-  color: var(--teal-800);
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  color: var(--teal-900);
   font-weight: 600;
+  letter-spacing: 0.01em;
 }
 
 .hero-actions {
@@ -565,11 +566,11 @@
 
 .telemetry-card {
   position: relative;
-  background: linear-gradient(145deg, #0A262C 0%, #0F373F 100%);
+  background: linear-gradient(160deg, #071C20 0%, #0B2A30 100%);
   border: 1px solid var(--border-teal);
   border-radius: var(--radius-lg);
-  padding: clamp(1rem, 2.5vw, 2.25rem);
-  box-shadow: var(--shadow-lg), 0 0 40px rgba(14, 124, 134, 0.15);
+  padding: clamp(1.25rem, 2.5vw, 2rem);
+  box-shadow: var(--shadow-lg), 0 0 30px rgba(11, 42, 48, 0.25);
   color: var(--surface);
   overflow: hidden;
 }
@@ -595,16 +596,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   padding-bottom: var(--space-3);
   margin-bottom: var(--space-4);
 }
 
 .telemetry-title {
-  font-family: var(--font-mono);
+  font-family: var(--font-body);
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   color: var(--teal-300);
   text-transform: uppercase;
 }
@@ -613,27 +614,18 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-family: var(--font-mono);
-  font-size: 10px;
+  font-family: var(--font-body);
+  font-size: 11px;
   font-weight: 700;
-  color: #4CC66B;
-  background-color: rgba(76, 198, 107, 0.15);
-  padding: 3px 8px;
+  color: #10B981;
+  background-color: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  padding: 4px 10px;
   border-radius: var(--radius-full);
 }
 
-.led-pulse {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background-color: #4CC66B;
-  box-shadow: 0 0 8px #4CC66B;
-  animation: pulse-led 2s infinite ease-in-out;
-}
-
-@keyframes pulse-led {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.4; transform: scale(0.85); }
+.telemetry-status-pill svg {
+  color: #10B981;
 }
 
 /* Warehouse Graphic in Hero */
@@ -641,7 +633,7 @@
   position: relative;
   width: 100%;
   height: 190px;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.3);
   border-radius: var(--radius-md);
   border: 1px solid rgba(255, 255, 255, 0.08);
   margin-bottom: var(--space-4);
@@ -653,14 +645,14 @@
   height: 100%;
 }
 
-/* Floating Data Logger LCD Screen */
+/* Precision Calibrated Readout Panel */
 .logger-lcd {
-  background-color: #A3C9C2;
-  border: 3px solid #1E373A;
+  background-color: #06181B;
+  border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: var(--radius-md);
   padding: var(--space-3) var(--space-4);
-  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.25);
-  color: #0E292E;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.35);
+  color: #FFFFFF;
   margin-bottom: var(--space-3);
 }
 
@@ -668,19 +660,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: var(--font-mono);
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  opacity: 0.85;
-  margin-bottom: 2px;
+  font-family: var(--font-body);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--teal-300);
+  margin-bottom: 4px;
 }
 
 .logger-lcd-readouts {
   display: flex;
   align-items: baseline;
   justify-content: space-around;
-  padding: 4px 0;
+  padding: 6px 0;
 }
 
 .readout-block {
@@ -688,36 +680,43 @@
 }
 
 .readout-val {
-  font-family: var(--font-mono);
-  font-size: clamp(2rem, 4vw, 2.75rem);
-  font-weight: 800;
-  letter-spacing: -0.04em;
+  font-family: var(--font-heading);
+  font-feature-settings: 'tnum';
+  font-variant-numeric: tabular-nums;
+  font-size: clamp(2.1rem, 4vw, 2.75rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
   line-height: 1;
+  color: #FFFFFF;
 }
 
 .readout-unit {
-  font-family: var(--font-mono);
-  font-size: 1.1rem;
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
   font-weight: 600;
+  color: var(--teal-300);
   margin-inline-start: 2px;
 }
 
 .readout-label {
-  font-family: var(--font-mono);
-  font-size: 10px;
+  font-family: var(--font-body);
+  font-size: 11px;
   text-transform: uppercase;
-  font-weight: 700;
-  opacity: 0.8;
-  margin-top: 4px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--ink-200);
+  margin-top: 6px;
 }
 
 .telemetry-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: var(--font-mono);
-  font-size: 10px;
-  color: var(--ink-400);
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--ink-200);
 }
 
 /* --------------------------------------------------------------------------
@@ -805,23 +804,27 @@
 }
 
 .simulator-probe-value {
-  font-family: var(--font-mono);
-  font-size: 1.35rem;
-  font-weight: 800;
+  font-family: var(--font-heading);
+  font-feature-settings: 'tnum';
+  font-variant-numeric: tabular-nums;
+  font-size: 1.45rem;
+  font-weight: 700;
   color: var(--orange-400);
   line-height: 1;
 }
 
 .simulator-probe-label {
-  font-family: var(--font-mono);
+  font-family: var(--font-body);
   font-size: 11px;
+  font-weight: 600;
   color: var(--ink-200);
 }
 
 #simProbeStatus {
-  font-family: var(--font-mono);
+  font-family: var(--font-body);
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 600;
+  letter-spacing: 0.03em;
   text-align: center;
   line-height: 1.35;
   padding: 5px 8px;
@@ -936,8 +939,9 @@
 }
 
 .thermal-legend-label {
-  font-family: var(--font-mono);
-  font-size: clamp(9px, 2.5vw, 11px);
+  font-family: var(--font-body);
+  font-size: clamp(9.5px, 2.5vw, 11px);
+  font-weight: 600;
   color: var(--ink-200);
   white-space: nowrap;
   direction: ltr !important;
@@ -1120,7 +1124,7 @@
 .domain-range-badge {
   display: inline-flex;
   align-items: center;
-  font-family: var(--font-mono);
+  font-family: var(--font-body);
   font-size: 11px;
   font-weight: 700;
   color: var(--teal-800);
@@ -1194,7 +1198,7 @@
 }
 
 .standard-code {
-  font-family: var(--font-mono);
+  font-family: var(--font-heading);
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--orange-400);
@@ -1324,12 +1328,13 @@
 }
 
 .product-badge {
-  font-family: var(--font-mono);
+  font-family: var(--font-body);
   font-size: 11px;
   font-weight: 700;
+  letter-spacing: 0.02em;
   color: var(--teal-800);
   background-color: var(--teal-100);
-  padding: 3px 8px;
+  padding: 4px 10px;
   border-radius: var(--radius-sm);
   display: inline-block;
   margin-bottom: var(--space-2);
@@ -1552,7 +1557,7 @@
 }
 
 .contact-label-title {
-  font-family: var(--font-mono);
+  font-family: var(--font-body);
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;

@@ -19,10 +19,10 @@
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 
-  <!-- Google Fonts: Bricolage Grotesque, DM Sans, IBM Plex Sans Arabic, JetBrains Mono -->
+  <!-- Human-Crafted Typography: Work Sans (Headings), DM Sans (Body), IBM Plex Sans Arabic -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 
   <!-- Pinned GSAP + ScrollTrigger CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
@@ -294,14 +294,14 @@
           </div>
         </div>
 
-        <!-- Hero Visual: Metrology Telemetry & Live Calibrated LCD Screen -->
+        <!-- Hero Visual: Metrological Qualification Dossier & Calibration Readout -->
         <div class="hero-visual">
           <div class="telemetry-card">
             <div class="telemetry-header">
-              <span class="telemetry-title" data-i18n="hero.telemetry_label">CAPTEUR ÉTALONNÉ EN CONTINU</span>
+              <span class="telemetry-title" data-i18n="hero.telemetry_label">DOSSIER TECHNIQUE DE QUALIFICATION</span>
               <span class="telemetry-status-pill">
-                <span class="led-pulse"></span>
-                <span data-i18n="hero.status_nominal">CONDITIONS NOMINALES</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span data-i18n="hero.status_nominal">CONFORME ANPP &amp; OMS</span>
               </span>
             </div>
 
@@ -343,32 +343,32 @@
               </svg>
             </div>
 
-            <!-- Precision Data Logger LCD Display (Fluctuates subtly in real-time) -->
+            <!-- Precision Calibrated Readout Panel -->
             <div class="logger-lcd">
               <div class="logger-lcd-top">
-                <span>REC PMQ-CALIB</span>
-                <span>CH1 / CH2</span>
-                <span>BAT: 98%</span>
+                <span>PROTOCOLE FD X 15-140</span>
+                <span>RÉPARTITION 3D</span>
+                <span>QUALIFICATION BPF</span>
               </div>
               <div class="logger-lcd-readouts">
                 <div class="readout-block">
-                  <div class="readout-label">TEMPÉRATURE</div>
+                  <div class="readout-label">TEMPÉRATURE AMBIANTE</div>
                   <div class="readout-val">
-                    <span id="heroTempVal" class="ltr-run">19.8</span><span class="readout-unit">°C</span>
+                    <span id="heroTempVal" class="ltr-run">20.4</span><span class="readout-unit">°C</span>
                   </div>
                 </div>
                 <div class="readout-block">
-                  <div class="readout-label">HUMIDITÉ</div>
+                  <div class="readout-label">HUMIDITÉ RELATIVE</div>
                   <div class="readout-val">
-                    <span id="heroHumVal" class="ltr-run">42.8</span><span class="readout-unit">%</span>
+                    <span id="heroHumVal" class="ltr-run">42.5</span><span class="readout-unit">%</span>
                   </div>
                 </div>
               </div>
             </div>
 
             <div class="telemetry-footer">
-              <span class="font-mono">SN: DZ-PMQ-2026-961</span>
-              <span class="font-mono" style="color: #4CC66B;" data-i18n="hero.hotspot_alert">ALERTE POINT CHAUD ÉVITÉE</span>
+              <span class="font-mono">RÉF. DOSSIER : DZ-PMQ-2026</span>
+              <span class="font-mono" style="color: var(--teal-300);" data-i18n="hero.hotspot_alert">TRAÇABILITÉ MÉTROLOGIQUE GARANTIE</span>
             </div>
           </div>
         </div>
@@ -381,7 +381,7 @@
     <section id="prestation" class="section services-section">
       <div class="container">
         <div class="section-header">
-          <div class="section-tag" data-i18n="services.tag">§01 / PRESTATION</div>
+          <div class="section-tag" data-i18n="services.tag">Expertise &amp; Prestation</div>
           <h2 class="section-title" data-i18n="services.title">Notre Prestation de Cartographie</h2>
         </div>
 
@@ -498,18 +498,18 @@
                 </circle>
                 <circle cx="0" cy="0" r="6" fill="#E5432F"/>
                 <rect x="-177" y="-15" width="165" height="30" rx="4" fill="#0B2A30" stroke="#E5432F" stroke-width="1"/>
-                <text id="simHotSpotText" x="-94.5" y="4" font-family="'JetBrains Mono', 'Tajawal', monospace, sans-serif" font-size="10" fill="#F28C28" text-anchor="middle" font-weight="700" data-i18n="services.sim_hot_spot">POINT CHAUD : 24.8 °C</text>
+                <text id="simHotSpotText" x="-94.5" y="4" font-family="'Work Sans', 'IBM Plex Sans Arabic', sans-serif" font-size="10.5" fill="#F28C28" text-anchor="middle" font-weight="700" data-i18n="services.sim_hot_spot">POINT CHAUD : 24.8 °C</text>
               </g>
 
               <!-- Interactive Dynamic Crosshairs -->
-              <line id="simCrosshairH" x1="0" y1="190" x2="840" y2="190" stroke="#4CC66B" stroke-width="1" stroke-dasharray="3,3" opacity="0.6"/>
-              <line id="simCrosshairV" x1="420" y1="0" x2="420" y2="380" stroke="#4CC66B" stroke-width="1" stroke-dasharray="3,3" opacity="0.6"/>
+              <line id="simCrosshairH" x1="0" y1="190" x2="840" y2="190" stroke="#14A3A8" stroke-width="1" stroke-dasharray="3,3" opacity="0.65"/>
+              <line id="simCrosshairV" x1="420" y1="0" x2="420" y2="380" stroke="#14A3A8" stroke-width="1" stroke-dasharray="3,3" opacity="0.65"/>
 
               <!-- Interactive Floating Probe Cursor -->
               <g id="simProbeCursor" transform="translate(420, 190)">
-                <circle id="simProbePin" cx="0" cy="0" r="8" fill="#4CC66B" stroke="#FFFFFF" stroke-width="2"/>
-                <rect id="simProbeBox" x="14" y="-16" width="90" height="32" rx="4" fill="#071E22" stroke="#4CC66B" stroke-width="1.5"/>
-                <text id="simProbeText" x="59" y="4" font-family="'JetBrains Mono', monospace" font-size="13" fill="#FFFFFF" font-weight="800" text-anchor="middle">20.5 °C</text>
+                <circle id="simProbePin" cx="0" cy="0" r="8" fill="#14A3A8" stroke="#FFFFFF" stroke-width="2"/>
+                <rect id="simProbeBox" x="14" y="-16" width="90" height="32" rx="4" fill="#071E22" stroke="#14A3A8" stroke-width="1.5"/>
+                <text id="simProbeText" x="59" y="4" font-family="'Work Sans', sans-serif" font-size="13" fill="#FFFFFF" font-weight="700" text-anchor="middle">20.5 °C</text>
               </g>
             </svg>
           </div>
@@ -535,7 +535,7 @@
     <section id="processus" class="section process-section">
       <div class="container">
         <div class="section-header">
-          <div class="section-tag" data-i18n="process.tag">§02 / PROCESSUS MÉTHODOLOGIQUE</div>
+          <div class="section-tag" data-i18n="process.tag">Protocole Méthodologique</div>
           <h2 class="section-title" data-i18n="process.title">Détail de la Prestation en 9 Étapes</h2>
           <p class="section-subtitle" data-i18n="process.subtitle">
             Une démarche métrologique rigoureuse, standardisée et conforme aux exigences d'audit.
@@ -669,7 +669,7 @@
     <section id="domaines" class="section domains-section">
       <div class="container">
         <div class="section-header">
-          <div class="section-tag" data-i18n="domains.tag">§03 / DOMAINES D'APPLICATION</div>
+          <div class="section-tag" data-i18n="domains.tag">Domaines d'Intervention</div>
           <h2 class="section-title" data-i18n="domains.title">Domaines d'Intervention &amp; Enceintes Qualifiées</h2>
           <p class="section-subtitle" data-i18n="domains.subtitle">
             Interventions sur site industriel pour l'ensemble des volumes et zones de rétention thermique.
@@ -770,7 +770,7 @@
     <section id="references" class="section section-dark standards-section">
       <div class="container">
         <div class="section-header">
-          <div class="section-tag" data-i18n="standards.tag">§04 / CONFORMITÉ &amp; RÉFÉRENTIELS</div>
+          <div class="section-tag" data-i18n="standards.tag">Conformité &amp; Référentiels</div>
           <h2 class="section-title" data-i18n="standards.title">Références Normatives &amp; Exigences Réglementaires</h2>
         </div>
 
@@ -832,7 +832,7 @@
     <section id="produits" class="section products-section">
       <div class="container">
         <div class="section-header">
-          <div class="section-tag" data-i18n="products.tag">§05 / INSTRUMENTS DE MESURE</div>
+          <div class="section-tag" data-i18n="products.tag">Équipements &amp; Métrologie</div>
           <h2 class="section-title" data-i18n="products.title">Vente de Thermo-Hygromètres &amp; Enregistreurs</h2>
           <p class="section-subtitle" data-i18n="products.lead">
             Nous proposons également la fourniture de thermo-hygromètres et d'enregistreurs adaptés au suivi des conditions de stockage.
@@ -920,7 +920,7 @@
     <section id="engagement" class="section commitment-section">
       <div class="container">
         <div class="section-header">
-          <div class="section-tag" data-i18n="commitment.tag">§06 / NOTRE ENGAGEMENT</div>
+          <div class="section-tag" data-i18n="commitment.tag">Engagement &amp; Déontologie</div>
           <h2 class="section-title" data-i18n="commitment.title">L'Excellence Métrologique au Service de Votre Conformité</h2>
           <p class="section-subtitle" data-i18n="commitment.subtitle">
             Un engagement sans compromis sur la rigueur scientifique et la réactivité d'intervention.
@@ -1016,7 +1016,7 @@
     <section id="contact" class="section contact-section">
       <div class="container">
         <div class="section-header">
-          <div class="section-tag" data-i18n="contact.tag">§07 / COORDONNÉES &amp; CONTACT</div>
+          <div class="section-tag" data-i18n="contact.tag">Coordonnées &amp; Devis</div>
           <h2 class="section-title" data-i18n="contact.title">Contactez PMQ Services</h2>
           <p class="section-subtitle" data-i18n="contact.subtitle">
             Notre équipe basée à Constantine intervient sur l'ensemble du territoire national algérien.

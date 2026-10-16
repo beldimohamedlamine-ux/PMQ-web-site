@@ -24,12 +24,12 @@
     "standards_ref": "FD X 15-140 and WHO Technical Report Series, No. 961, 2011 (Annex 9).",
     "cta_quote": "Request a Quote",
     "cta_explore": "Explore Our Services",
-    "telemetry_label": "CALIBRATED SENSOR TELEMETRY",
-    "status_nominal": "NOMINAL CONDITIONS",
-    "hotspot_alert": "HOT SPOT ALERT PREVENTED"
+    "telemetry_label": "QUALIFICATION TECHNICAL DOSSIER",
+    "status_nominal": "COMPLIANT ANPP & WHO",
+    "hotspot_alert": "TRACEABLE METROLOGY GUARANTEED"
   },
   "services": {
-    "tag": "§01 / SERVICE",
+    "tag": "Services & Expertise",
     "title": "Our Thermal Mapping Service",
     "statement": "PMQ SERVICES carries out temperature and humidity mapping services to evaluate the homogeneity of environmental conditions, identify critical zones, and verify storage compliance with regulatory and normative requirements.",
     "simulator_title": "Interactive Thermal Mapping Simulator",
@@ -50,7 +50,7 @@
     "sim_hot_spot": "HOT SPOT : 24.8 °C"
   },
   "process": {
-    "tag": "§02 / METHODOLOGY",
+    "tag": "Methodological Protocol",
     "title": "9-Step Mapping Service Workflow",
     "subtitle": "A rigorous, standardized metrological process designed for regulatory audit readiness.",
     "step1": "Study of the configuration and volume of the area to be mapped",
@@ -64,7 +64,7 @@
     "step9": "Preparation of a comprehensive, compliant mapping report"
   },
   "domains": {
-    "tag": "§03 / DOMAINS OF APPLICATION",
+    "tag": "Scope of Intervention",
     "title": "Intervention Areas & Qualified Storage Chambers",
     "subtitle": "On-site industrial mapping across all thermal volumes and controlled enclosures.",
     "item1_title": "Raw Materials Warehouses",
@@ -90,7 +90,7 @@
     "item7_range": "Custom Specifications"
   },
   "standards": {
-    "tag": "§04 / COMPLIANCE & STANDARDS",
+    "tag": "Compliance & Standards",
     "title": "Normative References & Regulatory Framework",
     "intro": "Services are performed in accordance with applicable ANPP regulatory requirements and in reference to current standards and guidelines:",
     "ref1_title": "FD X 15-140",
@@ -103,7 +103,7 @@
     "ref4_desc": "Requirements applicable to storage conditions for sensitive, healthcare, and industrial products."
   },
   "products": {
-    "tag": "§05 / MEASUREMENT INSTRUMENTS",
+    "tag": "Calibrated Equipment",
     "title": "Supply of Thermo-Hygrometers & Data Loggers",
     "lead": "We also supply precision thermo-hygrometers and data loggers tailored for monitoring storage conditions.",
     "features_title": "Product range highlights:",
@@ -122,7 +122,7 @@
     "cta_prod": "Request a Quote"
   },
   "commitment": {
-    "tag": "§06 / OUR COMMITMENT",
+    "tag": "Our Commitment",
     "title": "Metrological Excellence Ensuring Your Compliance",
     "subtitle": "Uncompromising commitment to scientific rigor and rapid response times.",
     "com1_title": "Technical expertise",
@@ -143,7 +143,7 @@
     "btn_call": "Call +213 564 86 69 40"
   },
   "contact": {
-    "tag": "§07 / CONTACT & LOCATION",
+    "tag": "Contact & Quote Request",
     "title": "Contact PMQ Services",
     "subtitle": "Based in Constantine, our team intervenes nationwide across Algeria.",
     "location_label": "Headquarters Location",

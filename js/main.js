@@ -92,25 +92,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   });
 
-  // 6. Live Telemetry Readout Micro-Fluctuation Ticker
+  // 6. Calibrated Nominal Lab Reference
   const tempValEl = document.getElementById('heroTempVal');
   const humValEl = document.getElementById('heroHumVal');
-
   if (tempValEl && humValEl) {
-    let currentTemp = 19.8;
-    let currentHum = 42.8;
-
-    setInterval(() => {
-      // Small micro-walk within nominal lab calibration tolerances
-      const tempDelta = (Math.random() - 0.5) * 0.2; // +/- 0.1°C
-      const humDelta = (Math.random() - 0.5) * 0.4;  // +/- 0.2%
-
-      currentTemp = Math.max(19.5, Math.min(20.2, currentTemp + tempDelta));
-      currentHum = Math.max(42.4, Math.min(43.2, currentHum + humDelta));
-
-      tempValEl.textContent = currentTemp.toFixed(1);
-      humValEl.textContent = currentHum.toFixed(1);
-    }, 3200);
+    tempValEl.textContent = '20.4';
+    humValEl.textContent = '42.5';
   }
 
   // 7. Active Navigation Link Spy

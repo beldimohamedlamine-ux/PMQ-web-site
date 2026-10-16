@@ -99,11 +99,13 @@ ul, ol {
   list-style: none;
 }
 
-/* Numeric & Code Protection */
+/* Numeric & Measurement Tabular Alignment (Clean Metrological Typography) */
 .font-mono,
 [data-mono] {
-  font-family: var(--font-mono);
-  letter-spacing: -0.01em;
+  font-family: var(--font-heading);
+  font-feature-settings: 'tnum';
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.01em;
 }
 
 bdi[dir="ltr"],
@@ -151,15 +153,14 @@ bdi[dir="ltr"],
   display: inline-flex;
   align-items: center;
   gap: var(--space-2);
-  font-family: var(--font-mono);
-  font-size: var(--text-mono);
-  font-weight: 600;
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 700;
   text-transform: uppercase;
-  color: var(--teal-700);
-  letter-spacing: 0.08em;
-  padding-block: var(--space-1);
-  padding-inline: var(--space-3);
-  background-color: var(--teal-100);
+  color: var(--teal-800);
+  letter-spacing: 0.05em;
+  padding: 5px 12px;
+  background-color: var(--teal-50);
   border: 1px solid var(--teal-300);
   border-radius: var(--radius-sm);
   margin-block-end: var(--space-3);
